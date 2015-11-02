@@ -1,0 +1,35 @@
+// musicJS
+var xml ='<?xml version="1.0"?>';
+xml +='<music>';
+xml +=' <composition>';
+xml +='   <title>Anger</title>';
+xml +='   <composer>agentsofmad</composer>';
+xml +='   <time>2:18</time>';
+xml +='   <filename>tunes/Anger.mp3</filename>';
+xml +=' </composition>';
+xml +=' <composition>';
+xml +='   <title>Lyin Dormant</title>';
+xml +='   <composer>agentsofmad</composer>';
+xml +='   <time>1:53</time>';
+xml +='   <filename>tunes/03-Lyin_Dormant.mp3</filename>';
+xml +=' </composition>';
+xml +=' <composition>';
+xml +='   <title>Arizona Nights</title>';
+xml +='   <composer>Astro Reactor</composer>';
+xml +='   <time>3:56</time>';
+xml +='   <filename>tunes/Arizona_Nights.mp3</filename>';
+xml +=' </composition>';
+xml +=' <composition>';
+xml +='   <title>Holding On</title>';
+xml +='   <composer>Brian K. Vagnini</composer>';
+xml +='   <time>3:24</time>';
+xml +='   <filename>tunes/02_Holding_On.mp3</filename>';
+xml +=' </composition>';
+xml +=' <composition>';
+xml +='   <title>Bass Brothers - Regrets</title>';
+xml +='   <composer>Brian K. Vagnini</composer>';
+xml +='   <time>4:43</time>';
+xml +='   <filename>tunes/09-Bass-Brothers-Regrets.mp3</filename>';
+xml +=' </composition>';
+xml +='</music>';
+

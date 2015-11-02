@@ -1,0 +1,30 @@
+{ "artists" : [
+    {
+    "name":"Zombie Minions",
+    "shortname":"zm",
+    "genre":"hard rock",
+    "bio":"Zombie Minions was formed by Caleb Cook and Tim During during middle school.  It now consists of Caleb (on Vocals and Guitar) and Brian (on Bass).",
+    "website":"http://www.zombieminions.com"
+  },
+   {
+    "name":"agentsofmad",
+    "shortname":"aom",
+    "genre":"rock",
+    "bio":"agentsofmad is currently a rock single (as opposed to a rock duo or rock trio). The name comes from the classic cartoon show 'Inspector Gadget'. mad doesn't offically stand for anything as far as the show goes, but his son suggested that it stood for 'my asshole dad'.",
+    "website":"http://www.agentsofmad.com"
+  },
+  {
+   "name":"Astro Reactor",
+   "shortname":"ar",
+   "genre":"triphop",
+   "bio":"Astro Reactor is a solo effort right now, with Brian K. Vagnini as the principal member.",
+   "website":"http://www.astroreactor.com"
+ },
+    {
+    "name":"Brian K. Vagnini",
+    "shortname":"brian",
+    "genre":"multiple genres",
+    "bio":"Brian K. Vagnini is a solo artist with a soundtrackish feel to his music.",
+    "website":"http://www.briankvagnini.com"
+    }]
+}

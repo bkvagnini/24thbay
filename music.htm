@@ -1,0 +1,264 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+  <title>24thbay Music Player</title>
+
+  <meta http-equiv="content-type"
+ content="text/html; charset=iso-8859-1">
+  <link rel="stylesheet" type="text/css" href="tabs.css">
+  
+  <!--  Start Music Player JS Section  -->
+  <script src = "tunes/music.js"></script>
+  <script> 
+  var player;
+  var intv;
+  var slider;
+  //Init
+  window.onload = function()
+  {
+    
+    document.getElementById('btnPlay').addEventListener('click',playMusic,false);
+    document.getElementById('btnPause').addEventListener('click',pauseMusic,false);
+    document.getElementById('btnStop').addEventListener('click',stopMusic,false);
+    document.getElementById('btnVolUp').addEventListener('click',volUp,false);
+    document.getElementById('btnVolDown').addEventListener('click',volDown,false);
+    
+    player = document.getElementById('player');
+    slider = document.getElementById('sliderTime');
+    slider.addEventListener('change', reposition,false);
+    getMusicList();
+  } //ends anonymous function
+  
+  function reposition()
+  {
+    player.currentTime = slider.value; 
+  } //ends reposition function
+  
+  //Volume Controls
+  //0.0 Silent - 1.0 Full Volume
+  function volUp()
+  {
+    if(player.volume < 1)
+    {
+      player.volume += 0.1;
+      console.log(player.volume);
+    } else
+    {
+      player.volume = 1;
+    }  
+  } //ends volUp function
+  
+  function volDown()
+  {
+    if(player.volume > 0)
+    {
+      player.volume -= 0.1;
+      console.log(player.volume);
+    } else
+    {
+      player.volume = 0;
+    }  
+  } //ends volDown function
+  
+  //Music Play Controls
+  function playMusic()
+  {
+    player.play();
+    intv = setInterval(update, 100);
+    slider.max = player.duration;
+  } //ends playMusic function
+  
+  function update()
+  {
+    document.getElementById('songTime').innerHTML = millisToMins(player.currentTime);
+    slider,value = player.currentTime;
+  } //ends update function
+  
+  function millisToMins(seconds)
+  {
+    var numminutes = Math.floor((((seconds%31536000) % 86400) %3600)/60);
+    var numseconds = (((seconds%31536000)%86400)%3600)%60;
+    
+    if(numseconds >=10)
+    {
+      return "Time Elapsed: " + numminutes + ":" + Math.round(numseconds);
+    } else
+    {
+      return "Time Elapsed: " + numminutes + ":0" + Math.round(numseconds);
+    }
+    
+  } //ends millisToMins function
+  
+  function pauseMusic()
+  {
+    player.pause();
+    clearInterval(intv);
+  } //ends pauseMusic function
+  
+  function stopMusic()
+  {
+    player.pause();
+    player.currentTime = 0;
+    clearInterval(intv);
+  }//ends stopMusic function
+  function getMusicList()
+  {
+    var parser = new DOMParser();
+    xmlDocument = parser.parseFromString(xml, "text/xml");
+    var elementsArray = xmlDocument.documentElement.getElementsByTagName('composition');
+    var arrayLength = elementsArray.length;
+    var output = "<table>"+"<tr><th>" + "Title" + "</th>" + "<th>" +"Artist"+ "</th>"+ "<th>" + "Length" + "</th>";
+    for (var i=0; i<arrayLength; i++)
+    {
+      var title = elementsArray[i].getElementsByTagName('title')[0].firstChild.nodeValue;
+      var composer = elementsArray[i].getElementsByTagName('composer')[0].firstChild.nodeValue;
+      var time = elementsArray[i].getElementsByTagName('time')[0].firstChild.nodeValue;
+      var fileName = elementsArray[i].getElementsByTagName('filename')[0].firstChild.nodeValue;
+      output += "<tr>";
+      output += ("<td onclick='songSelect(\"" + fileName + "\")'> "+ title + "</td>" + "<td>" + composer + "</td>" + "<td>" + time + "</td>");
+      output += "</tr>"
+    }
+    output += "</table>";
+    document.getElementById('musicList').innerHTML = output;
+  } //ends getMusicList function
+  
+  function songSelect(fn)
+  {
+    //console.log(fn)
+    document.getElementById('player').src = fn;
+    playMusic();
+  } //ends songSelect function
+  
+  </script>
+  <!--  End Music Player JS Section -->
+   <!--  Start Music Player Style Section -->
+  <style>
+  #musicList td
+  {
+    border: 1px solid black;
+    padding: 6px;
+  }
+  #musicList td:hover 
+  {
+    background-color: #990000;
+    color: white; 
+  }
+  #tunesplayer
+  {
+    border:2px;
+    border-color:black;
+    margin: 50px;
+   
+  }
+  #paypal
+  {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  </style>  <!--  End Music Player Style Section -->
+  
+
+</head>
+<body id="body">
+  <img src="images/24thBay.gif" width="592" height="114" alt="24thBay record label logo" />
+  <h2>24thbay Records</h2>
+<div id="header">
+<!--
+<h3> Demos </h3>
+<p>There will be a form here to select what you want the playlist to be:: for now, it's most of the demos of other peoples stuff. I either wrote all the music or played some part , as well as recording the performance (back in the late 80's- early 90's).</p>
+<h3>Note: Below Forms doesn't work just yet</h3>
+  <p>Select the songs you wish to audition prior to licensing by filling out the form below...</p>
+<div id="selectionForm"">
+  <form name="input" action="form_action.php" method="get">
+    Genre:
+    <select name = "genre">
+      <option value="select1">Please select one...</option>
+      <option value="literock">Lite Rock</option>
+      <option value="electronica">Electronica</option>
+      <option value="hardrock">Hard Rock</option>
+    </select><br>
+    Mood:
+    <select name = "mood">
+      <option value="select1">Please select one...</option>
+      <option value="melancholy">Melancholy</option>
+      <option value="driving">Driving beat</option>
+      <option value="chill">Relaxed</option>
+      <option value="angry">Angry</option>
+    </select><br>
+    Desired Length: <input type="text" name="length"><br>
+    <input type="submit" value="Submit">
+  </form>
+  <hr>
+  <p>Now that you've selected the songs you wish to license, please fill out the form below to get in contact with us...</p>
+  <form name= "buy" action="buy_music.php" method="post">
+    First name: <input type="text" name="firstname"><br>
+    Last name: <input type="text" name="lastname"><br>
+    Song(s) Desired: <input type="text" name="songs"><br>
+    E-Mail address: <input type="text" name="email"><br>
+    <input type="submit" value="Submit">
+    </form>
+</div>  
+ -->
+<div id="tunesplayer">
+<h3>Audio Player</h3>
+<p><em>Click on the song title to play the song...</em></p>
+<audio id ="player"></audio>
+<div id = "musicList"></div><br>
+<button id ="btnPlay">Play</button>
+<button id ="btnPause">Pause</button>
+<button id ="btnStop">Stop</button><br>
+<button id ="btnVolUp">Volume + </button>
+<button id ="btnVolDown">Volume - </button><br><br>
+<span id = "songTime"></span><br>
+<input id="sliderTime" type = "range" min= "0" value="0" />
+</div>  <!-- End of tunesplayer--> 
+
+ <!-- 
+  <div id = "Flash-basedPlayer"
+  <p align="center"> 
+  <object
+ classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+ codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0"
+ title="MP3 Player" align="middle" height="200" width="300"> 
+    <param
+ name="movie" value="mp3.swf"> <param name="quality" value="high">
+    <embed src="mp3.swf" quality="high"
+ pluginspage="http://www.macromedia.com/go/getflashplayer"
+ type="application/x-shockwave-flash" align="middle" height="200"
+ width="300"> 
+  </object> 
+</p>
+-->
+</div>
+<br>
+<p align="center">
+<a href="http://spreadsheets.google.com/viewform?formkey=dHB0a2J3cXFIVTdrTmRfSFBvSm5KWFE6MA"target="_blank">5 short survey questions about the music you heard</a></p>
+<div id = "paypal">
+<!-- Begin Paypal Donate Button -->
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="MJ32UZYG6BK9L">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+</div><!-- End Paypal Donate Button -->
+
+<!--
+<p>Check out new music at <a href="http://www.myspace.com/bassicallyspeaking" target="_blank">http://www.myspace.com/bassicallyspeaking </a><br />
+  Also check out my Garage Band Profile at <a href="http://www.garageband.com/artist/BrianVagnini" target="_blank">http://www.garageband.com/artist/BrianVagnini</a><br />
+  My YouTube channel is at <a href="http://www.youtube.com/user/bkvagnini" target="_blank">http://www.youtube.com/user/bkvagnini</a></p>
+
+
+ 
+<p><strong>Click here to read <a href="courtney.htm">Courtney Love's
+Manifesto</a> on Napster, Metallica, the Recording Industry Association
+of America and File sharing programs!!</strong></p>
+-->
+<hr>
+<p align="center">Send mail to <a
+ href="mailto:brian@24thbay.com">brian@24thbay.com</a>
+with questions or comments about this web site.<br>
+Copyright &copy; 2015 Brian K. Vagnini</p>
+</body>
+</html>

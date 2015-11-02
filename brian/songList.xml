@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+	<songs>
+		<song display="LMMS beat-11/17/10" url="mymp3s/111710.mp3" />
+		<song display="Sonar-3/23/10" url="mymp3s/showcase/032310-rough.mp3" />
+		<song display="ProTools-2/27/10" url="mymp3s/showcase/ProTools022710-rough.mp3" />		
+		<song display="ProTools-2/6/10" url="mymp3s/showcase/ProTools020610rough.mp3" />
+		<song display="Zombie Minions 013110-Rough" url="mymp3s/showcase/013110-rough.mp3" />
+		<song display="041209 Fruity Loops" url="mymp3s/showcase/041209.mp3" />
+		<song display="Playing with Acid-041108" url="mymp3s/showcase/041108.mp3" />
+		<song display="CTUSA 2006 Commercial Submission" url="mymp3s/showcase/CTUSAcommercial2006.mp3" />
+		<song display="UWF Groove" url="mymp3s/showcase/uwfgroove.mp3" />
+		<song display="Easter Hunt" url="mymp3s/showcase/EasterHunt.mp3" />
+		<song display="Carribean Giveaway" url="mymp3s/showcase/Carribean_giveaway.mp3" />
+		<song display="Legends" url="mymp3s/showcase/legends_nightclub.mp3" />
+		<song display="Arizona Nights" url="mymp3s/showcase/Arizona_Nights.mp3" />
+ 		<song display="Live Webcast example/Dell DJ stream" url="http://the24thbay.gotdns.com:8000/mp3" />
+	</songs>
+
