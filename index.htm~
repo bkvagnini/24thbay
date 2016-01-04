@@ -23,6 +23,7 @@
 <h2 style="margin:10px; text-align:center">24thbay Records</h2>
 
 <!-- Begin NewRelease section -->
+<article id="featured">
  <!-- Columns are always 50% wide, on mobile and desktop -->
   <div class="container-fluid">
    <div class="row-fluid"> 
@@ -52,6 +53,7 @@
     </div> <!-- Close col-xs-9-->
 <!--</div> <!-- Close row-fluid-->
 </div> <!-- Close container-fluid-->
+</article>
 <!-- End Release section -->
 
 <!-- Begin LeftBar section -->
@@ -97,7 +99,8 @@
 <a href="mailto:brian@24thbay.com">brian@24thbay.com</a>
 <br>850-583-0842
 <br>(c) 2016 24thbay
-            
+       
+<br><a class="designedby" href="http://6gen3.com">designed by 6gen3.com </a>
 </article>
 
 </div><!-- Close span3-left-->
