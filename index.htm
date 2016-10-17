@@ -3,27 +3,85 @@
 <head>
 <title>24thbay.com- a Tallahassee, FL indie record label</title>
 <meta charset="utf-8">
-<meta name="description" content="24thbay.com-a Tallahassee,FL indie record label" /><meta name="keywords" content="recording, Tallahassee, music, techno, rock, hard rock, techno-rock, triphop, ambient, label, record label" />
-<link rel="stylesheet" href="24thbay.css">
-	<link href='http://fonts.googleapis.com/css?family=Wendy+One|Libre+Baskerville' rel='stylesheet' type='text/css'>
+<meta name="description" content="24thbay.com-a Tallahassee,FL indie record label" />
+<meta name="keywords" content="recording, Tallahassee, music, techno, rock, hard rock, techno-rock, triphop, ambient, label, record label" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/artistroster.css"> 
+<link href='http://fonts.googleapis.com/css?family=Wendy+One|Libre+Baskerville' rel='stylesheet' type='text/css'>
+<link href="css/bootstrap-responsive.css" rel="stylesheet"> 
+<link rel="stylesheet" href="css/w3.css">
+
+<!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]--> 
+		
+		
+		<style>
+		.mySlides {display:none}
+		.w3-left, .w3-right, .w3-badge {cursor:pointer}
+		.w3-badge {height:13px;width:13px;padding:0}
+		</style>
 </head>
 
-<body><img src="images/24thBay.gif" width="592" height="114" alt="24thBay record label logo" />
-<h2>24thbay Records</h2>
-<header>
+<body>
+<img align="center" src="images/24thBay.gif" width="100%" height="100%" alt="24thBay record label logo" />
+<h2 style="margin:10px; text-align:center">24thbay Records</h2>
 
-</header>
 
-<article>
+<!-- Begin Slideshow -->
+
+<div class="w3-container">
+  <h2>CD Releases </h2>
+</div>
+
+<div class="w3-content w3-display-container" style="max-width:800px">
+  <a href= "http://24thbay.bandcamp.com/album/groove-thing"><img class="mySlides" src="images/Groove_Thing_Front-Cover.jpg"  alt="Groove Thing by Brian K. Vagnini" style="width:50%"> </a>
+  <a href="http://agentsofmad.com/media.htm"><img class="mySlides" src="images/aom-GetMad-Frontcover.jpg" alt="Get MAD by agentsofmad" style="width:50%"></a>
+</div>
+  <div class="w3-center w3-section w3-large w3-text-white w3-display-bottomleft" style="width:100%">
+    <div class="w3-left w3-padding-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="w3-right w3-padding-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+  </div>
+</div>
+
+
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 5000); // Change image every 5 seconds
+}
+</script>
+
+
+<!--End Slideshow Content -->
+
+
+
+<!-- Begin LeftBar section -->
+<div class="span3-left">
+<article style="margin:10px;"> 
 <h3> About Us</h3>
 <p> This label was started in 2013 in Tallahassee, FL. <br>We are interested in multiple genres, with most of them being rock oriented. <br>There are some exceptions, though.</p>
-<h1>NEW RELEASE April 1st, 2015!!</h1>
-<p>(NOT an April Fools Joke...it was released in honor of my grandfather's 97th birthday...)</p> 
- <a href="http://agentsofmad.bandcamp.com"><img src="images/aom-GetMad-Frontcover.jpg" width="50%" height="50%" alt="Agents of MAD-Get Mad CD Cover"/></a>
- <p style= "color:black;"><strong>( agentsofmad is Hard Rock...with a punkish feel )</strong></p>
-<p><strong>Debut Album "Get MAD" EP is OUT!!</strong><br />
-  <br /> You can buy it on iTunes, Google Play, Amazon, or Bandcamp OR you could stream it from Last.fm or Spotify via <a href="http://agentsofmad.com/media.htm">agentsofmad.com/media.htm</a></p>
-</article>
+
+<a href="contact.php"><h3> Submissions/Contact Us</h3></a>
 
 <h3>Artist Roster</h3>
 <br />
@@ -40,16 +98,14 @@
 			<img src="images/{{shortname}}_tn.jpg" alt="Photo of {{name}}" />
 			<h3>{{name}}</h3>
 			<h4>{{genre}}</h4>
-      <p><a href="{{website}}" target="_blank">{{website}}</a>
 			<p>{{bio}}</p>
+			<p><a href="{{website}}" target="_blank">{{website}}</a>
 		</div>
 	{{/artists}}
 </script>
 
 
-<div id="related">
-  <h3> Submissions</h3>
-  <p>If you have something to submit, please contact us and we'll see if it's a good fit.</p>
+
 <h3>Related Sites</h3>
 <ul>
 <li><a href= "http://reverbnation.com/label/24thbay" target="_blank">Reverbnation Site</a></li>
@@ -57,8 +113,31 @@
 <li><a href= "music.htm">Music player</a></li>
 <li><a href="http://24thbay.bandcamp.com/" target="_blank">24thbay Merchandise</a></li>
 </ul>
-<a href="mailto:brian@24thbay.com">brian@24thbay.com</a> | 850-583-0842 | (c) 2015 24thbay
 
+
+<a href="mailto:brian@24thbay.com">brian@24thbay.com</a>
+<br>850-583-0842
+<br>(c) 2016 24thbay
+       
+<br><a class="designedby" href="http://6gen3.com">designed by 6gen3.com </a>
+</article>
+
+</div><!-- Close span3-left-->
+</div> <!-- Close row-fluid-->
+</div><!-- Close container-fluid-->
+             
+<!-- End LeftBar section -->
+
+
+
+   <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/holder.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.cycle/2.9999.8/jquery.cycle.all.min.js" type="text/javascript"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.0/mustache.min.js" type="text/javascript"></script>
 
@@ -84,5 +163,6 @@ $(function() {
 }); //function
 
 </script>
+
 </body>
 </html>
