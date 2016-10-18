@@ -1,4 +1,38 @@
 <!-- Begin NewRelease section -->
+<article id="featured">
+ <!-- Columns are always 50% wide, on mobile and desktop -->
+  <div class="container-fluid">
+   <div class="row-fluid"> 
+    <div class="col-xs-9-"style="float:right;"> 
+		  <h1>NEW RELEASE April 4th, 2016!!</h1>
+		<p> <a href="http://24thbay.bandcamp.com/album/groove-thing"><img src="images/Groove_Thing_Front-Cover.jpg" width="30%" height="30%" alt="Brian K. Vagnini -Groove Thing CD Cover"/></a></p>
+		 <p style= "color:black;"><strong>( soundtrackish, instrumental rock )</strong></p>
+		<p><strong>"Groove Thing" EP is OUT!!</strong><br />
+		  <br /> For the moment, you can buy it on <a href="http://24thbay.bandcamp.com/album/groove-thing">Bandcamp</a><br>
+		   <p>This is a re-release where the last song was recorded in 2006. </p>
+		
+    <h3>Previous Releases</h3>
+<p>(NOT an April Fools Joke...it was released in honor of my grandfather's 97th birthday...)</p> 
+ <a href="http://agentsofmad.bandcamp.com"><img src="images/aom-GetMad-Frontcover.jpg" width="30%" height="30%" alt="Agents of MAD-Get Mad CD Cover"/></a>
+ <p style= "color:black;"><strong>( agentsofmad is Hard Rock...with a punkish feel )</strong></p>
+<p><strong>Debut Album "Get MAD" EP is OUT</strong><br />
+  <br /> You can buy it on iTunes, Google Play, Amazon, or Bandcamp 
+<br>OR you could stream it from Last.fm or Spotify via <a href="http://agentsofmad.com/media.htm">agentsofmad.com/media.htm</a></p>
+<!-- End NewRelease section -->
+
+
+</div><!-- Close row-fluid-->
+</div> <!-- Close container-fluid-->
+</article>
+<!-- End Release section -->
+
+
+
+
+
+
+----------------
+<!-- Begin NewRelease section -->
  
 <article id="featured">
  <!-- Columns are always 50% wide, on mobile and desktop -->
