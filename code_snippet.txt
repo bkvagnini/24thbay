@@ -1,0 +1,177 @@
+<!-- Begin NewRelease section -->
+<article id="featured">
+ <!-- Columns are always 50% wide, on mobile and desktop -->
+  <div class="container-fluid">
+   <div class="row-fluid"> 
+    <div class="col-xs-9-"style="float:right;"> 
+		  <h1>NEW RELEASE April 4th, 2016!!</h1>
+		<p> <a href="http://24thbay.bandcamp.com/album/groove-thing"><img src="images/Groove_Thing_Front-Cover.jpg" width="30%" height="30%" alt="Brian K. Vagnini -Groove Thing CD Cover"/></a></p>
+		 <p style= "color:black;"><strong>( soundtrackish, instrumental rock )</strong></p>
+		<p><strong>"Groove Thing" EP is OUT!!</strong><br />
+		  <br /> For the moment, you can buy it on <a href="http://24thbay.bandcamp.com/album/groove-thing">Bandcamp</a><br>
+		   <p>This is a re-release where the last song was recorded in 2006. </p>
+		
+    <h3>Previous Releases</h3>
+<p>(NOT an April Fools Joke...it was released in honor of my grandfather's 97th birthday...)</p> 
+ <a href="http://agentsofmad.bandcamp.com"><img src="images/aom-GetMad-Frontcover.jpg" width="30%" height="30%" alt="Agents of MAD-Get Mad CD Cover"/></a>
+ <p style= "color:black;"><strong>( agentsofmad is Hard Rock...with a punkish feel )</strong></p>
+<p><strong>Debut Album "Get MAD" EP is OUT</strong><br />
+  <br /> You can buy it on iTunes, Google Play, Amazon, or Bandcamp 
+<br>OR you could stream it from Last.fm or Spotify via <a href="http://agentsofmad.com/media.htm">agentsofmad.com/media.htm</a></p>
+<!-- End NewRelease section -->
+
+
+</div><!-- Close row-fluid-->
+</div> <!-- Close container-fluid-->
+</article>
+<!-- End Release section -->
+
+
+
+
+
+
+----------------
+<!-- Begin NewRelease section -->
+ 
+<article id="featured">
+ <!-- Columns are always 50% wide, on mobile and desktop -->
+  <div class="container-fluid">
+   <div class="row-fluid"> 
+    <div class="col-xs-9-"style="float:right;"> 
+		  <h1>NEW RELEASE April 4th, 2016!!</h1>
+		<p> <a href="http://24thbay.bandcamp.com/album/groove-thing"><img src="images/Groove_Thing_Front-Cover.jpg" width="30%" height="30%" alt="Brian K. Vagnini -Groove Thing CD Cover"/></a></p>
+		 <p style= "color:black;"><strong>( soundtrackish, instrumental rock )</strong></p>
+		<p><strong>"Groove Thing" EP is OUT!!</strong><br />
+		  <br /> For the moment, you can buy it on <a href="http://24thbay.bandcamp.com/album/groove-thing">Bandcamp</a><br>
+		   <p>This is a re-release where the last song was recorded in 2006. </p>
+		
+    <h3>Previous Releases</h3>
+<p>(NOT an April Fools Joke...it was released in honor of my grandfather's 97th birthday...)</p> 
+ <a href="http://agentsofmad.bandcamp.com"><img src="images/aom-GetMad-Frontcover.jpg" width="30%" height="30%" alt="Agents of MAD-Get Mad CD Cover"/></a>
+ <p style= "color:black;"><strong>( agentsofmad is Hard Rock...with a punkish feel )</strong></p>
+<p><strong>Debut Album "Get MAD" EP is OUT</strong><br />
+  <br /> You can buy it on iTunes, Google Play, Amazon, or Bandcamp 
+<br>OR you could stream it from Last.fm or Spotify via <a href="http://agentsofmad.com/media.htm">agentsofmad.com/media.htm</a></p>
+<!-- End NewRelease section -->
+
+
+<!-- Begin Release section -->
+ <!-- Columns are always 50% wide, on mobile and desktop -->
+<!--
+  <div class="container-fluid">
+<div class="row-fluid"> 
+    <div class="col-xs-9"style="float:right;"> 
+	<div id="releases">
+	<h2> 24thbay releases</h2>
+	<a href="#" id="prev_btn">&laquo;</a>
+	<a href="#" id="next_btn">&raquo;</a>
+	<div id="carousel"></div>
+	</div>
+    </div> <!-- Close col-xs-9-->
+<!--</div> <!-- Close row-fluid-->
+</div> <!-- Close container-fluid-->
+</article>
+<!-- End Release section -->
+
+
+<!-- Begin Carousel Section -->
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="3"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <a href="http://24thbay.bandcamp.com/album/groove-thing"><img src="images/Groove_Thing_Front-Cover.jpg" width="30%" height="30%" alt="Groove Thing by Brian K. Vagnini"> </a>
+	  <div class="carousel-caption">
+	          <h3>Groove Thing</h3>
+	          <p>This is a re-release of an album, but it's been mastered and one additional song added.</p>
+    </div>
+
+    <div class="item">
+      <a href="http://24thbay.bandcamp.com/album/groove-thing"><img src="images/Groove_Thing_Front-Cover.jpg" width="30%" height="30%" alt="Groove Thing by Brian K. Vagnini"> </a>
+    </div>
+
+    <div class="item">
+      <a href="http://agentsofmad.com/media.htm"><img src="images/aom-GetMad-Frontcover.jpg" width="30%" height="30%" alt="Get MAD by agentsofmad"> </a>
+	  <div class="carousel-caption">
+	          <h3>Get MAD</h3>
+	          <p>Debut EP from agentsofmad. Hard rock, with a punkish feel....</p>
+    </div>
+
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+
+<!-- End Carousel Section -->
+
+
+
+
+
+
+
+
+
+
+<!-- Begin Slideshow -->
+<div class="w3-display-container mySlides" style="max-width:1200px">
+<img class="mySlides" src="images/Groove_Thing_Front-Cover.jpg" alt="Groove Thing by Brian K. Vagnini" style="width:50%"> 
+<div class="w3-display-bottomleft w3-container w3-padding-16 w3-black">
+    Groove Thing by Brian K. Vagnini
+  </div> 
+
+<img class="mySlides" src="images/aom-GetMad-Frontcover.jpg" alt="Get MAD by agentsofmad" style="width:50%">
+<div class="w3-display-bottomleft w3-container w3-padding-16 w3-black">
+    Get MAD by agentsofmad
+  </div>
+<div class="w3-center w3-display-bottomleft" style="width:100%">
+    <div class="w3-left" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="w3-right" onclick="plusDivs(1)">&#10095;</div>
+    <span class="w3-badge demo w3-border" onclick="currentDiv(1)"></span>
+    <span class="w3-badge demo w3-border" onclick="currentDiv(2)"></span>
+  </div>
+
+<script>
+
+  var slideIndex = 1;
+  showDivs(slideIndex);
+
+  function plusDivs(n) {
+      showDivs(slideIndex += n);
+  }
+
+  function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      if (n > x.length) {slideIndex = 1} 
+      if (n < 1) {slideIndex = x.length} ;
+      for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none"; 
+      }
+      x[slideIndex-1].style.display = "block"; 
+  }
+</script>
+
+
+<!--End Slideshow Content -->
+
+
+
+
