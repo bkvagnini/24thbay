@@ -32,7 +32,14 @@
 if (!isset($_POST["firstname"])) { 
 ?>
   <h1 class="header">Feedback/Comments</h1>
-
+<p> <strong>Do NOT contact me</strong> if you are trying to offer me:
+<li>SEO services</li>
+<li>graphic design services</li>
+<li> web design services</li> 
+<li>cheap meds</li>
+<li> Email newsletters</li> 
+<li>etc.</li>It's all spam to me and I don't read any of it (beyond seeing if it's spam). <br />
+I will NOT respond to you, so save the both of us some time and just move on to the next one. Ok? </p>
 
   <form method="post">
 
